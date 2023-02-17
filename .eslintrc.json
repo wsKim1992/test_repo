@@ -17,8 +17,9 @@
 		"createDefaultProgram": true
 	},
 	"plugins": ["react", "@typescript-eslint", "import", "prettier"],
+	"ignorePatterns": ["node_modules/"],
 	"rules": {
-		"prettier/prettier": "error",
+		"prettier/prettier": ["error", { "singleQuote": true }],
 		"no-mixed-spaces-and-tabs": ["error", "smart-tabs"],
 		"no-alert": "off",
 		"no-console": "off",
@@ -26,12 +27,13 @@
 		"no-unused-vars": "error",
 		"arrow-body-style": "off",
 		"no-case-declarations": "off",
+		"quotes": ["error", "single"],
 		"react/react-in-jsx-scope": "off",
 		"react/self-closing-comp": "error",
 		"react/style-prop-object": "error",
-		"react/require-default-props": "off",
+		"react/require-default-props": "error",
 		"react/jsx-props-no-spreading": "off",
-		"react/destructuring-assignment": "off",
+		"react/destructuring-assignment": "error",
 		"react/function-component-definition": [
 			"error",
 			{ "namedComponents": "arrow-function" }
@@ -39,13 +41,23 @@
 		"react/prop-types": "off",
 		"react/jsx-boolean-value": "error",
 		"react/jsx-filename-extension": [
-			"off",
-			{ "extensions": ["js", "jsx", "ts", "tsx"] }
+			"error",
+			{ "extensions": ["jsx", "tsx"] }
 		],
-		"import/named": "error" /* off 로 설정 해야 reportWebVitals 에서 import 관련 error 이 발생 안함.. */,
+		"react/jsx-curly-brace-presence": "error",
+		"import/named": "off" /* off 로 설정 해야 reportWebVitals 에서 import 관련 error 이 발생 안함.. */,
 		"import/no-unresolved": "off",
 		"import/prefer-default-export": "off",
-		"import/extensions": ["error", "never", { "json": "always" }]
+		"import/extensions": [
+			"error",
+			"never",
+			{
+				"json": "always",
+				"jpg": "always",
+				"png": "always",
+				"svg": "always"
+			}
+		]
 	},
 	"settings": {
 		"react": { "version": "detect" }
