@@ -27,6 +27,7 @@ module.exports = {
 						"@types": "./src/types",
 						"@utils": "./src/utils",
 						"@routes": "./src/routes",
+						"@": "./src",
 					},
 				},
 			],

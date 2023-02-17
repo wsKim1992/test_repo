@@ -40,7 +40,7 @@
 		"react/jsx-boolean-value": "error",
 		"react/jsx-filename-extension": [
 			"off",
-			{ "extensions": ["js", "jsx"] }
+			{ "extensions": ["js", "jsx", "ts", "tsx"] }
 		],
 		"import/named": "error" /* off 로 설정 해야 reportWebVitals 에서 import 관련 error 이 발생 안함.. */,
 		"import/no-unresolved": "off",

@@ -1,3 +1,4 @@
+//import Routes from "@routes/firstRoute";
 import MainPage from "@pages/mainPage";
 
 import "./App.css";
