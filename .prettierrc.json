@@ -16,7 +16,7 @@
 		"^@apis/(.*)$",
 		"^@utils/(.*)$",
 		"^@interfaces/(.*)$",
-		"^@types/(.*)$",
+		"^@type/(.*)$",
 		"^@assets/(.*)$",
 		"^@components/(.*)$",
 		"^@pages/(.*)$",
