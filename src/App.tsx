@@ -8,9 +8,8 @@ const App = () => {
 	const mainPageAttr = { flag: false, name: 'Kim Woo Seok' };
 
 	return (
-		<div className="App">
+		<div className="hello">
 			<MainPage {...mainPageAttr} />
-			<div>Hello World</div>
 		</div>
 	);
 };
